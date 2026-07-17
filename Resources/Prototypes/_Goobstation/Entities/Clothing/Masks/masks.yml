@@ -190,3 +190,41 @@
   - type: IngestionBlocker
     blockSmokeIngestion: true
     enabled: false
+
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: ClothingMaskN95
+  name: N95 respirator
+  description: A fitted respirator mask rated to filter at least 95% of small airborne particles when properly sealed. Offers strong protection against airborne disease in both directions.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/sterile.rsi # placeholder, no dedicated N95 sprite yet
+  - type: Clothing
+    sprite: Clothing/Mask/sterile.rsi # placeholder, no dedicated N95 sprite yet
+  - type: IngestionBlocker
+  - type: Item
+    size: Tiny
+  - type: IdentityBlocker
+    coverage: MOUTH
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 40
+      Steel: 5
+  - type: StaticPrice
+    price: 20
+  - type: Tag
+    tags:
+    - Mask
+  # Goobstation
+  - type: DiseaseProtection
+    # strong protection, roughly symmetric
+    incoming:
+      powerModifiers:
+        Aerial: -0.75
+      chanceMultipliers:
+        Aerial: 0.25
+    outgoing:
+      powerModifiers:
+        Aerial: -0.75
+      chanceMultipliers:
+        Aerial: 0.25

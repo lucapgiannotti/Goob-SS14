@@ -8,3 +8,18 @@
     contents:
       - id: MaterialBiomass
         amount: 1  #it was too op guys
+
+- type: entity
+  parent: CrateMedical
+  id: CratePandemicMasks
+  name: pandemic mask crate
+  description: Outbreak-response PPE - a mix of sterile masks and N95 respirators to keep the crew breathing easy during an outbreak.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: BoxSterileMask
+          amount: 4
+        - id: BoxN95Mask
+          amount: 4

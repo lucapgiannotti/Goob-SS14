@@ -451,17 +451,17 @@
     price: 5
   # Goobstation
   - type: DiseaseProtection
-    # really strong protection
+    # moderately strong protection -> stronger for outgoing than incoming
     incoming:
       powerModifiers:
-        Aerial: -0.6
+        Aerial: -0.3
       chanceMultipliers:
-        Aerial: 0.4
+        Aerial: 0.65
     outgoing:
       powerModifiers:
-        Aerial: -0.6
+        Aerial: -0.7
       chanceMultipliers:
-        Aerial: 0.4
+        Aerial: 0.3
 
 - type: entity
   parent: ClothingMaskBase

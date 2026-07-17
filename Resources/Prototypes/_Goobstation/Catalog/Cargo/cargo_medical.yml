@@ -17,3 +17,13 @@
   cost: 2500
   category: cargoproduct-category-name-medical
   group: market
+
+- type: cargoProduct
+  id: MedicalPandemicMasks
+  icon:
+    sprite: Objects/Specific/Medical/firstaidkits.rsi # placeholder icon
+    state: firstaid
+  product: CratePandemicMasks
+  cost: 1650 # idk if this price seems reasonable
+  category: cargoproduct-category-name-medical
+  group: market

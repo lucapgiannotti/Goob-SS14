@@ -55,3 +55,17 @@
       amount: 3
   - type: Sprite
     sprite: _Goobstation/Objects/Storage/boxes.rsi
+
+- type: entity
+  name: N95 respirator box
+  parent: BoxCardboard
+  id: BoxN95Mask
+  description: This box contains N95 respirator masks for outbreak response.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: ClothingMaskN95
+        amount: 4
+  - type: Sprite
+    sprite: _Goobstation/Objects/Storage/boxes.rsi # placeholder, reuses generic box sprite
